@@ -1,0 +1,22 @@
+﻿<Window x:Class="ClothesStore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClothesStore"
+        mc:Ignorable="d"
+        Title="Магазин Одежды" Height="600" Width="1000" MinHeight="600" MinWidth="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition Height="0.4*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Fill="LightBlue"></Rectangle>
+        <TextBlock Grid.Row="0" Text="Магазин Одежды" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"></TextBlock>
+        <Button Grid.Row="0" Content="Назад" Name="BtnBack" Click="BtnBack_Click" Width="150" Height="50" FontSize="20" HorizontalAlignment="Right"></Button>
+        <Frame Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden"></Frame>
+        <Rectangle Grid.Row="2" Fill="LightBlue"></Rectangle>
+
+    </Grid>
+</Window>
