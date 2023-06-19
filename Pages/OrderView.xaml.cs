@@ -39,6 +39,7 @@ namespace ClothesStore.Pages
             catch
             {
                 order.ID = 1;
+
             }
             
             foreach (var product in products)
